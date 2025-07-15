@@ -1,4 +1,4 @@
-#Machine
+# Machine
 This section contains all the information about the machine I am using to run this solution as well as what I did to set it up. 
 
 This solution was going to be brought to many different locations, and so we decided to use an old laptop to run the program. Unfortunatly the donated laptop was quite old and could bearly run the version of windows it had loaded on it. 
