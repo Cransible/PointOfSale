@@ -1,0 +1,54 @@
+# Creating a Bootable Linux USB
+
+I needed a way to get Linux onto the machine and found that creating a bootable Linux USB to be the easiest way.
+
+The steps are relatively simple:
+1. Decide on the Linux OS you are going to run and download the ISO file.
+2. Use a program to take the ISO and create a bootable USB with it.
+
+---
+
+## 1. Deciding on the Linux OS and Downloading the ISO File
+
+There are a lot of different versions of Linux that you can run, and I suggest that you decide which version based on your needs.
+
+My needs were as follows:
+- Needs to be lightweight to bring life to an old computer.
+- Needs to be Windows-like to easily hand off to other people with minimal training.
+
+This led me to **Linux Mint** ([Link to Linux Mint](https://linuxmint.com/)), specifically the **Cinnamon Edition**.
+
+The minimum requirements were in line with what my machine had, and it was Windows-like enough to allow anyone to open a program easily and quickly with minimal training.
+
+Follow the OS provider's advice when downloading the ISO, and choose it from a mirror server that is close to you for better speeds.
+
+---
+
+## 2. Using a Program to Create the Bootable USB
+
+Most guides that I found while researching this recommended using **BalenaEtcher** to create the bootable USB. However, I went down a rabbit hole trying to decide which program was best, and **Rufus** came up multiple times. I wasn’t sure if there was much difference, or if it was mostly based on preference.
+
+What I found is that **Rufus** is generally considered lighter weight and more capable.
+
+Additionally, I found a random Reddit thread suggesting that **BalenaEtcher** might have spyware loaded after 2024. Given this, I decided to go with **Rufus** ([Link to Rufus](https://rufus.ie/)).
+
+Just download it, and it runs quickly.
+
+---
+
+### To Make the Bootable Drive:
+
+1. Plug in a USB drive that you are willing to sacrifice for this task. (The USB will be reformatted, so any data on there should be backed up before you start).
+2. Make sure the ISO file is downloaded and saved in an easily accessible folder (e.g., Downloads).
+3. Start the **Rufus** program and follow the prompts to create the bootable drive.  
+    - The most important information you need to provide is:
+        - **Device**: The USB you want to make into the bootable device.
+        - **Boot Selection**: The ISO file you want to load onto it.
+4. Let the program run, and voilà, you now have a bootable device!
+
+---
+
+### Final Steps:
+
+- Eject the USB drive properly to avoid corrupting anything.
+- Plug it into the machine you want to convert to Linux.
